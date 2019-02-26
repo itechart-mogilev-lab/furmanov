@@ -1,0 +1,121 @@
+.main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+.article{
+    border-top:4px solid rgb(192, 191, 191);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 97%;
+}
+.article_new{
+    position: relative;
+    background:rgb(214, 214, 214);
+}
+.trapezoid{
+    border-bottom: 30px solid brown;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 50px;
+    text-align: center;
+    line-height: 2;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.article__trapezoid{
+    position: absolute;
+    top:9px;
+    right:-26px;
+    color:rgb(236, 236, 236);
+}
+.article__title{
+    margin:8px;
+}
+.article-main{
+    width: 88%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.article__article-main{
+    margin:0 auto;
+    margin-bottom:2%;
+}
+.article-main__picture{
+    width: 100px;
+    height: 100px;
+    border-radius:15px;
+    margin-right: 3%;
+}
+.article-main__paragraph{
+    margin: 0;
+}
+.article__button{
+    border:none;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 1% auto;
+    margin-right: 50px;
+    padding: 6px;
+    border-radius: 5px;
+    background: rgb(236, 181, 62);
+    cursor:pointer;
+}
+.triangle{
+    height: 0;
+    width: 0;
+    border-bottom: 40px solid rgb(236, 236, 236);
+    border-left:40px solid #bbb;
+}
+.article__triangle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (max-width:840px){
+    .article-main__picture{
+        display: none;
+   }
+}
+@media screen and (max-width:524px){
+    .article-main__picture{
+        display: block;
+   }
+   .main{
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+   }
+   .article{
+       width: 95%;
+   }
+}
+@media screen and (max-width:460px){
+    .article-main__picture{
+        display: none;
+   }
+    .article-main__paragraph{
+        margin:0 2%;
+   }
+}
